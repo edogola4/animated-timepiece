@@ -95,7 +95,7 @@ function triggerAlarm() {
 }
 // Function to Play Alarm Sound
 function playAlarmSound() {
-    const audio = new Audio("https://www.soundjay.com/button/beep-07.wav");
+    const audio = new Audio("./audio/audio.wav");
     audio.loop = true; // Repeat sound until stopped
     audio.play();
 
