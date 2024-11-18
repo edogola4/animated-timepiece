@@ -355,3 +355,11 @@ span {
         opacity: 1;
     }
 }
+
+.snooze-button {
+    background-color: #4caf50; /* Green */
+}
+
+.stop-button {
+    background-color: #e91e63; /* Pink */
+}

@@ -139,3 +139,28 @@ document.addEventListener("DOMContentLoaded", () => {
     // Initialize Greeting
     updateGreeting(new Date().getHours());
 });
+
+
+snoozeButton.className = "alarm-button snooze-button";
+stopButton.className = "alarm-button stop-button";
+
+
+// Styling for the Snooze Button
+snoozeButton.style.padding = "10px 20px";
+snoozeButton.style.margin = "10px";
+snoozeButton.style.border = "none";
+snoozeButton.style.backgroundColor = "#4caf50"; // Green color
+snoozeButton.style.color = "white";
+snoozeButton.style.borderRadius = "5px";
+snoozeButton.style.fontSize = "16px";
+snoozeButton.style.cursor = "pointer";
+
+// Styling for the Stop Button
+stopButton.style.padding = "10px 20px";
+stopButton.style.margin = "10px";
+stopButton.style.border = "none";
+stopButton.style.backgroundColor = "#e91e63"; // Pink color
+stopButton.style.color = "white";
+stopButton.style.borderRadius = "5px";
+stopButton.style.fontSize = "16px";
+stopButton.style.cursor = "pointer";
