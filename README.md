@@ -43,3 +43,7 @@ Modular JavaScript and CSS files for easy customization and scalability.
 
 ## Contributing
 Contributions are welcome! If you have suggestions or want to report issues, feel free to submit a pull request or open an issue in the repository.
+
+
+## License
+This project currently does not have a specified license. You are free to use, modify, and share it as needed.
