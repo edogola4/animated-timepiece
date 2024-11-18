@@ -47,3 +47,7 @@ Contributions are welcome! If you have suggestions or want to report issues, fee
 
 ## License
 This project currently does not have a specified license. You are free to use, modify, and share it as needed.
+
+
+## Acknowledgments
+A special thanks to myself for building this project and to all the users for their support and feedback.
