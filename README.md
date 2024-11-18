@@ -18,20 +18,20 @@ An interactive and visually appealing animated clock application(*animated-timep
 
 
 ## Animated Clock Features:
-- **Real-Time Clock:**
+ **Real-Time Clock:**
 - *Displays hours, minutes, and seconds with smooth animations.*
   
-- **Dynamic Greetings:**
+ **Dynamic Greetings:**
 - *Updates greetings based on the time of day (morning, afternoon, evening).*
   
-- **Alarm Functionality:**
+ **Alarm Functionality:**
 - *Allows users to set an alarm using a time input field.*
 - *Alarm triggers a sound, displays a message, and offers Snooze and Stop buttons.*
   
-- **Customizable Snooze:**
+ **Customizable Snooze:**
 - *Resets the alarm for an additional 5 minutes.*
   
-- **Stylish UI:**
+ **Stylish UI:**
 - *Modern design using gradients, shadows, and responsive layout.*
 
 
