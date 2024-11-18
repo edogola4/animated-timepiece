@@ -7,6 +7,23 @@ const alarmInput = document.getElementById("alarm-time");
 const setAlarmButton = document.getElementById("set-alarm");
 const alarmMessage = document.getElementById("alarm-message");
 
+// Create snooze and stop buttons dynamically
+const snoozeButton = document.createElement("button");
+const stopButton = document.createElement("button");
+
+snoozeButton.textContent = "Snooze";
+stopButton.textContent = "Stop";
+
+snoozeButton.style.display = "none";
+stopButton.style.display = "none";
+
+document.querySelector(".alarm-container").append(snoozeButton, stopButton);
+
+//let alarmTime = null;
+let alarmTimeout = null;
+let isAlarmRinging = false;
+
+
 let alarmTime = null;
 
 // Function to Update Clock
@@ -69,8 +86,50 @@ function triggerAlarm() {
     alarmMessage.textContent = "Alarm Ringing!";
     alarmMessage.style.color = "#e91e63"; // Alert color
     alarmTime = null; // Reset the alarm
-}
 
+    // Show snooze and stop buttons
+    snoozeButton.style.display = "inline-block";
+    stopButton.style.display = "inline-block";
+
+    playAlarmSound();
+}
+// Function to Play Alarm Sound
+function playAlarmSound() {
+    const audio = new Audio("https://www.soundjay.com/button/beep-07.wav");
+    audio.loop = true; // Repeat sound until stopped
+    audio.play();
+
+    // Attach to global so we can stop the sound
+    snoozeButton.addEventListener("click", () => {
+        alarmTime = getSnoozeTime(5); // Snooze for 5 minutes
+        alarmMessage.textContent = `Alarm snoozed for 5 minutes.`;
+        alarmMessage.style.color = "#4caf50"; // Success color
+        stopAlarm(audio); // Stop current alarm sound
+    });
+
+    stopButton.addEventListener("click", () => {
+        alarmTime = null; // Clear the alarm
+        alarmMessage.textContent = `Alarm stopped.`;
+        alarmMessage.style.color = "#4caf50"; // Success color
+        stopAlarm(audio); // Stop current alarm sound
+    });
+}
+// Function to Stop Alarm Sound
+function stopAlarm(audio) {
+    isAlarmRinging = false;
+    snoozeButton.style.display = "none";
+    stopButton.style.display = "none";
+    audio.pause();
+    audio.currentTime = 0; // Reset sound to the beginning
+}
+// Function to Calculate Snooze Time
+function getSnoozeTime(minutes) {
+    const now = new Date();
+    now.setMinutes(now.getMinutes() + minutes); // Add snooze duration
+    const snoozeHours = String(now.getHours()).padStart(2, "0");
+    const snoozeMinutes = String(now.getMinutes()).padStart(2, "0");
+    return `${snoozeHours}:${snoozeMinutes}`;
+}
 // Initialize the Clock
 setInterval(updateClock, 1000);
 updateClock(); // Call once immediately to avoid delay
