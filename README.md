@@ -18,10 +18,6 @@ An interactive and visually appealing animated clock application(*animated-timep
 
 
 ## Animated Clock Features:
-1. Dynamic Time Display: View time in real-time with smooth animations.
-2. Customizable Design: Easily tweak the appearance with CSS for a personalized look.
-3. Interactive Interface: Engaging animation effects for a lively clock experience.
-4. Modern UI: A sleek, minimal design for seamless user interaction.
 
 
 ## Technology Stack:
