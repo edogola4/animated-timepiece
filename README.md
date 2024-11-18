@@ -22,3 +22,7 @@ Animated Clock is a web app that visually displays time with smooth animations a
 
 ## Deployment:
 GitHub Pages: Hosting and deployment for easy access.
+
+
+## Development Tools:
+Modular JavaScript and CSS files for easy customization and scalability.
