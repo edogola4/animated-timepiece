@@ -1,4 +1,4 @@
 ![Preview](./assets/preview.png)
 
 # animated-timepiece
-An interactive animated clock built with HTML, CSS, and JavaScript. This project features smooth animations and dynamic time display, perfect for exploring time-based animations and interactive UI elements.
+Animated Clock is a web app that visually displays time with smooth animations and dynamic effects. Built with HTML, CSS, and JavaScript, it showcases a modern and interactive clock, offering a fun way to experience real-time timekeeping through animation.
