@@ -6,6 +6,17 @@
 An interactive and visually appealing animated clock application(*animated-timepiece*) that displays the current time, greets users based on the time of day, and provides an alarm feature with snooze and stop functionality. This project is built using HTML, CSS, and JavaScript.
 
 
+## Table of Contents
+- **Features**
+- **How It Works**
+- **Project Structure**
+- **Setup Instructions**
+- **Key Selectors**
+- **Contributing**
+- **License**
+
+
+
 ## Animated Clock Features:
 1. Dynamic Time Display: View time in real-time with smooth animations.
 2. Customizable Design: Easily tweak the appearance with CSS for a personalized look.
