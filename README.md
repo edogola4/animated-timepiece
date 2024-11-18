@@ -34,6 +34,17 @@ An interactive and visually appealing animated clock application(*animated-timep
  **Stylish UI:**
 - *Modern design using gradients, shadows, and responsive layout.*
 
+## How It Works
+**Real-Time Clock**
+- The clock updates every second using JavaScript, with degrees of rotation calculated for hours, minutes, and seconds.
+
+**Alarm**
+- Users set the alarm via the input field.
+- When the current time matches the alarm time, an alert is triggered, and the alarm sound plays in a loop.
+- Users can either snooze or stop the alarm.
+**Styling**
+- The project uses CSS for a visually rich interface, with animations and gradients enhancing the user experience.
+
 
 ## Technology Stack:
 *The Animated Clock project uses the following technologies and stacks*:
