@@ -39,3 +39,7 @@ Modular JavaScript and CSS files for easy customization and scalability.
 - *Check the time in a visually appealing way.*
 - *Customize the clock's look with ease using CSS.*
 - *Add interactive elements for a more engaging user experience.*
+
+
+## Contributing
+Contributions are welcome! If you have suggestions or want to report issues, feel free to submit a pull request or open an issue in the repository.
