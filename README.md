@@ -12,4 +12,9 @@ Animated Clock is a web app that visually displays time with smooth animations a
 
 
 ## Technology Stack:
-**The Animated Clock project uses the following technologies and stacks*:
+*The Animated Clock project uses the following technologies and stacks*:
+
+**Frontend**:
+HTML5: Structure and content of web pages.
+CSS3: Styling, animations, and layout.
+JavaScript: Real-time functionality and interactivity.
