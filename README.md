@@ -9,3 +9,7 @@ Animated Clock is a web app that visually displays time with smooth animations a
 2. Customizable Design: Easily tweak the appearance with CSS for a personalized look.
 3. Interactive Interface: Engaging animation effects for a lively clock experience.
 4. Modern UI: A sleek, minimal design for seamless user interaction.
+
+
+## Technology Stack:
+**The Animated Clock project uses the following technologies and stacks*:
