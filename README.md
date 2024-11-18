@@ -47,16 +47,16 @@ An interactive and visually appealing animated clock application(*animated-timep
 
 
 ## Key Selectors
-**Clock**
+- **Clock**
 - Hours Hand: *.hrs*
 - Minutes Hand: *.min*
 - Seconds Hand: *.sec*
-**Alarm**
+- **Alarm**
 - Greeting Message: *greeting*
 - Alarm Input Field: *alarm-time*
 - Set Alarm Button: *set-alarm*
 - Alarm Message Display: *alarm-message*
-**Alarm Buttons**
+- **Alarm Buttons**
 - Snooze Button: Dynamically created *(.alarm-button.snooze-button)*
 - Stop Button: Dynamically created *(.alarm-button.stop-button)*
 
