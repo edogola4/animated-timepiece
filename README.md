@@ -46,6 +46,19 @@ An interactive and visually appealing animated clock application(*animated-timep
 - The project uses CSS for a visually rich interface, with animations and gradients enhancing the user experience.
 
 
+## Key Selectors
+**Clock**
+- Hours Hand: *.hrs*
+- Minutes Hand: *.min*
+- Seconds Hand: *.sec*
+**Alarm**
+- Greeting Message: *greeting*
+- Alarm Input Field: *alarm-time*
+- Set Alarm Button: *set-alarm*
+- Alarm Message Display: *alarm-message*
+**Alarm Buttons**
+- Snooze Button: Dynamically created *(.alarm-button.snooze-button)*
+- Stop Button: Dynamically created *(.alarm-button.stop-button)*
 
 
 
