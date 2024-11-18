@@ -51,6 +51,7 @@ main {
 
 /* Greeting Styling */
 .greeting {
+     position: fixed;
     font-size: 2rem;
     color: #ffffff;
     text-align: center;
