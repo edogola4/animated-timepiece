@@ -46,6 +46,18 @@ An interactive and visually appealing animated clock application(*animated-timep
 - The project uses CSS for a visually rich interface, with animations and gradients enhancing the user experience.
 
 
+## Project Structure
+project/
+│
+├── index.html         # Main HTML file
+├── styles.css         # Styling for the project
+├── index.js           # JavaScript for clock and alarm logic
+├── audio/
+│   └── audio.wav      # Alarm sound
+└── README.md          # Project documentation
+
+
+
 ## Technology Stack:
 *The Animated Clock project uses the following technologies and stacks*:
 
