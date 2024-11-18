@@ -5,39 +5,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animated Timepiece</title>
+    <title>Animated Timepiece with Alarm</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Adding a link to Google Fonts for styling purposes -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <h1>Animated Timepiece</h1>
+        <h1>My Personalized Timepiece</h1>
     </header>
 
-    <body>
-        <main>
-            <!-- Animated Clock Container -->
-            <div class="clock">
-                <!-- Numbers Display -->
-                <div class="numbers">
-                     <!-- Hour Indicators -->
-                    <span class="twelve"><b>12</b></span>
-                    <span class="three"><b>3</b></span>
-                    <span class="six"><b>6</b></span>
-                    <span class="nine"><b>9</b></span>
-                    <!-- Clock Hands -->
-                    <div class="time hrs"><i></i></div>
-                    <!-- Hour Hand -->
-                    <div class="time min"><i></i></div>
-                    <!-- Minute Hand -->
-                    <div class="time sec"><i></i></div>
-                     <!-- Second Hand -->
-                </div>
+    <main>
+        <!-- Dynamic Greeting -->
+        <div class="greeting" id="greeting">Good Day!</div>
+
+        <!-- Animated Clock -->
+        <div class="clock">
+            <div class="numbers">
+                <span class="twelve"><b>12</b></span>
+                <span class="three"><b>3</b></span>
+                <span class="six"><b>6</b></span>
+                <span class="nine"><b>9</b></span>
+                <div class="time hrs"><i></i></div>
+                <div class="time min"><i></i></div>
+                <div class="time sec"><i></i></div>
             </div>
-        </main>
-        <script src="index.js"></script>
-    </body>
+        </div>
+
+        <!-- Alarm Setter -->
+        <div class="alarm-container">
+            <label for="alarm-time">Set Alarm:</label>
+            <input type="time" id="alarm-time">
+            <button id="set-alarm">Set Alarm</button>
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
 
 </html>
