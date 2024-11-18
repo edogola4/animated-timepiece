@@ -26,3 +26,10 @@ GitHub Pages: Hosting and deployment for easy access.
 
 ## Development Tools:
 Modular JavaScript and CSS files for easy customization and scalability.
+
+
+## Future Improvements:
+- **Multiple Themes**: Add more customizable themes for different looks.
+- **Alarm Functionality**: Introduce an alarm feature with custom notifications.
+- **Time Zone Support**: Allow users to switch between time zones.
+- **Enhanced Animations**: Implement more complex and engaging animations.
