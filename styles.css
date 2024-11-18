@@ -8,16 +8,61 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    padding-top: 80px; /* Prevent overlap with the fixed header */
 }
 
+/* Header Styling */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #152b4a;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Main Layout */
 main {
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #a2b6f2;
+    gap: 20px;
 }
 
+/* Greeting Styling */
+.greeting {
+    font-size: 2rem;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 700;
+    background: linear-gradient(45deg, #2196f3, #e91e63);
+    padding: 15px 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Clock Styling */
 .clock {
     display: flex;
     justify-content: center;
@@ -33,6 +78,7 @@ main {
         -15px -15px 35px rgba(255, 255, 255, 0.55),
         inset -1px -1px 10px rgba(0, 0, 0, 0.2);
 }
+
 
 .clock::before {
     position: absolute;
@@ -70,6 +116,7 @@ span {
     color: #fff;
     font-size: 1.25em;
 }
+
 
 .twelve {
     /* Not Mandatory */
@@ -176,102 +223,135 @@ b {
 }
 
 
-/* Header Styling */
-/* Header Styling */
-header {
-    position: fixed; /* Fixes the header at the top of the page */
-    top: 0; /* Align it to the top of the viewport */
-    left: 0; /* Align it to the left */
-    width: 100%; /* Make it span the full width of the page */
-    background-color: #152b4a; /* Deep blue background */
-    color: #fff; /* White text */
-    padding: 20px 0; /* Padding around the header */
-    text-align: center; /* Center the text */
-    font-family: 'Poppins', sans-serif; /* Font styling */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Shadow for a subtle 3D effect */
-    z-index: 1000; /* Ensures the header stays on top of other elements */
+/*.clock .numbers {
+    position: absolute;
+    border-radius: 50%;
+    background-color: #152b4a;
+    top: 35px;
+    left: 35px;
+    bottom: 35px;
+    right: 35px;
+    box-shadow: 5px 5px 15px #152b4a,
+        inset 5px 5px 5px rgba(255, 255, 255, 0.55),
+        -6px -6px 10px rgba(255, 255, 255, 1);
 }
 
-header h1 {
-    font-size: 2.5rem; /* Make the title larger */
-    font-weight: 600; /* Slightly bold */
-    letter-spacing: 2px; /* Add some spacing between letters */
-    text-transform: uppercase; /* Uppercase for style */
-    margin: 0; /* Remove default margin */
-}
-
-body {
-    padding-top: 80px; /* Add padding at the top of the page to prevent content from hiding behind the fixed header */
-}
-
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2rem; /* Slightly smaller font size for mobile */
-    }
-}
-
-
-/* Greeting Styling */
-.greeting {
-    font-size: 2rem;
-    color: #ffffff;
-    margin-bottom: 30px;
+/* Numbers and Hands *
+span {
+    position: absolute;
     text-align: center;
-    font-weight: 700;
-    background: rgba(21, 43, 74, 0.8);
-    padding: 10px 20px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Alarm Container Styling */
-.alarm-container {
-    margin-top: 40px;
-    text-align: center;
-    padding: 20px;
-    background: rgba(21, 43, 74, 0.8);
-    border-radius: 15px;
-    display: inline-block;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-.alarm-container label {
-    font-size: 1.5rem;
-    margin-right: 15px;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    left: 5px;
     color: #fff;
-    font-weight: 600;
+    font-size: 1.25em;
 }
 
-.alarm-container input {
-    padding: 8px 15px;
-    font-size: 1.2rem;
-    border-radius: 8px;
-    border: 1px solid #ccc;
+.time i {
+    position: absolute;
+    width: 3px;
     background-color: #fff;
-    outline: none;
-    transition: box-shadow 0.3s;
+    height: 50%;
+    transform-origin: bottom;
+}*/
+
+/* Alarm Section */
+.alarm-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(145deg, #ffffff, #d1d9e6);
+    padding: 20px 30px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), -5px -5px 15px rgba(255, 255, 255, 0.7);
+    max-width: 400px;
+    margin: 0 auto;
+    gap: 20px;
+    color: #2c3e50;
 }
 
-.alarm-container input:focus {
-    box-shadow: 0 0 8px rgba(233, 30, 99, 0.5);
+.alarm-header h2 {
+    font-size: 1.5rem;
+    color: #34495e;
+    text-align: center;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.alarm-container button {
-    margin-left: 15px;
-    padding: 10px 20px;
-    font-size: 1.2rem;
+.alarm-header h2 i {
+    font-size: 1.8rem;
+    color: #e91e63;
+}
+
+.alarm-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 15px;
+}
+
+.alarm-content label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #2c3e50;
+    flex: 1;
+}
+
+.alarm-content input {
+    padding: 10px;
     border: none;
-    background-color: #e91e63;
-    color: #fff;
     border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.1), inset -2px -2px 5px rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    flex: 1.5;
+    color: #2c3e50;
 }
 
-.alarm-container button:hover {
-    background-color: #d81b60;
-    transform: scale(1.05);
+.alarm-content input:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+.alarm-content button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(145deg, #e91e63, #d81b60);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), -5px -5px 15px rgba(255, 255, 255, 0.7);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.alarm-content button:hover {
+    background: linear-gradient(145deg, #d81b60, #c2185b);
+    box-shadow: 0 5px 15px rgba(233, 30, 99, 0.5);
+}
+
+#alarm-message {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    color: #34495e;
+    margin-top: 10px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
