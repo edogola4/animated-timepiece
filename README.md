@@ -1,7 +1,7 @@
 ![Preview](./assets/preview.png)
 
 # animated-timepiece
-
+.
 ## Personalized Animated Clock with Alarm
 An interactive and visually appealing animated clock application(*animated-timepiece*) that displays the current time, greets users based on the time of day, and provides an alarm feature with snooze and stop functionality. This project is built using HTML, CSS, and JavaScript.
 
