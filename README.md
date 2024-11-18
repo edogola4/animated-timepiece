@@ -1,5 +1,6 @@
 ![Preview](./assets/preview.png)
 
+
 # animated-timepiece
 .
 ## Personalized Animated Clock with Alarm
